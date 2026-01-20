@@ -1,0 +1,48 @@
+USE [ProjectLCAL_C#]
+GO
+/****** Object:  Table [dbo].[Service]    Script Date: 10/12/2025 8:37:09 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Service](
+	[ServiceID] [nvarchar](10) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+	[Price] [int] NOT NULL,
+	[Description] [nvarchar](1000) NOT NULL,
+	[Image] [nvarchar](50) NOT NULL,
+	[SubCategoryID] [nvarchar](10) NOT NULL,
+ CONSTRAINT [PK_Service] PRIMARY KEY CLUSTERED 
+(
+	[ServiceID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-001', N'Deep Home Cleaning', 2500, N'Bring back the fresh & new feeling of your home! Our expert team deep cleans every corner — floors, walls, windows, furniture, and hidden spots — making your space shine like new.', N'clean1.jpg', N'P-01')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-002', N'Glass & Window Cleaning', 1200, N'No more dull or dusty windows! We make every glass sparkle with streak-free shine — letting the sunlight brighten your home. Perfect for both inside & outside surfaces.', N'clean2.jpg', N'P-01')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-003', N'Kitchen & Floor Cleaning', 1800, N'Say goodbye to sticky floors and oily surfaces! We remove stubborn stains, mop and polish floors, and clean kitchen areas deeply for a fresh, hygienic space.', N'clean3.jpg', N'P-01')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-004', N'Kitchen Plumbing', 1500, N'We handle all kitchen plumbing needs — from sink and faucet installation to dishwasher and water line connections. Our team also fixes leaks, unclogs drains, and ensures your kitchen water system runs smoothly.', N'plumb1.jpg', N'P-02')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-005', N'Bathroom Plumbing', 1800, N'Say goodbye to leaky taps and weak water pressure! From installing showers, wash basins, and commodes to fixing hidden leaks and clogged lines — we keep your bathroom fresh and fully functional', N'plumb2.jpg', N'P-02')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-006', N'Water Line Repair & Installation', 2000, N'Get a steady water flow with our expert water line services. We repair broken lines, install new connections, and ensure every tap and appliance in your home gets clean, uninterrupted water.', N'electric1.jpg', N'P-02')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-007', N'Mini Garden Setup', 2000, N'Transform your home corners into a peaceful green zone! We design and install stylish indoor plant setups with pots, planters, and easy-to-maintain greenery that refreshes your space.', N'gardenin1.jpg', N'P-03')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-008', N'Plant Care & Maintenance', 1500, N'No more dead or dull plants! We water, trim, fertilize, and keep your indoor plants healthy and glowing — so your mini garden stays fresh all year round.', N'gardenin2.jpg', N'P-03')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-009', N'Lawn & Yard Makeover', 3000, N'Give your outdoor space a fresh new life! From planting grass and flowers to arranging garden beds — we create a clean, beautiful, and relaxing lawn just the way you want.', N'gardenout1.jpg', N'P-04')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-010', N'Garden Cleaning & Trimming', 1800, N'Overgrown garden? We handle it! Our team cleans weeds, trims plants, and shapes your outdoor garden to keep it neat, healthy, and picture-perfect.', N'gardenout2.jpg', N'P-04')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-011', N'AC & Fridge Repair', 2500, N'Keep your home cool and fresh without any breakdowns! We fix AC and fridge issues — from gas refill to motor problems — ensuring smooth cooling and energy efficiency.', N'appliance1.jpg', N'P-05')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-012', N'TV & Washing Machine Fix', 2000, N'No more blurry screens or stuck washing cycles! We repair TV, washing machine & other daily appliances quickly and professionally — right at your doorstep.', N'appliance2.jpg', N'P-05')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-013', N'NULLWiring & Switch Repair', 1800, N'Power up your home safely! We fix loose switches, faulty wiring, and short-circuit issues to keep your house safe, bright, and fully functional.', N'electric1.jpg', N'P-06')
+GO
+INSERT [dbo].[Service] ([ServiceID], [Name], [Price], [Description], [Image], [SubCategoryID]) VALUES (N'S-014', N'Motor & Fan Servicing', 1500, N'Say goodbye to slow or noisy fans and motor problems! Our experts repair and service them to ensure smooth performance and long-lasting use.', N'electric2.jpg', N'P-06')
+GO
